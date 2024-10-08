@@ -6,5 +6,15 @@
   },
   "routes": [
     { "src": "/(.*)", "dest": "/api/index.php" }
+    { "src": "/episodes.php", "dest": "/api/episodes.php" }
+    { "src": "/getsports.php", "dest": "/api/getsports.php" }
+    { "src": "/movies.php", "dest": "/api/movies.php" }
+    { "src": "/search.js", "dest": "/api/search.js" }
+    { "src": "/seasons.php", "dest": "/api/seasons.php" }
+    { "src": "/sports.php", "dest": "/api/sports.php" }
+    { "src": "/stream.php", "dest": "/api/stream.php" }
+    { "src": "/tvShows.php", "dest": "/api/tvShows.php" }
+    { "src": "player/play.php", "dest": "/api/player/play.php" }
+    { "src": "/player/playlive.php", "dest": "/api/player/playlive.php" }
   ]
 }
