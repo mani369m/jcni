@@ -1,0 +1,113 @@
+@font-face {
+  font-family : 'Rubik';
+  font-weight : 400;
+  font-display : swap;
+  src : local(''), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Regular.woff2') format('woff2'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Regular.woff') format('woff'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Regular.ttf') format('truetype')
+}
+@font-face {
+  font-family : 'Rubik';
+  font-weight : 500;
+  font-display : swap;
+  src : local(''), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Medium.woff2') format('woff2'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Medium.woff') format('woff'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Medium.ttf') format('truetype')
+}
+@font-face {
+  font-family : 'Rubik';
+  font-weight : 500;
+  font-display : swap;
+  src : local(''), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-SemiBold.woff2') format('woff2'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-SemiBold.woff') format('woff'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-SemiBold.ttf') format('truetype')
+}
+@font-face {
+  font-family : 'Rubik';
+  font-weight : 700;
+  font-display : swap;
+  src : local(''), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Bold.woff2') format('woff2'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Bold.woff') format('woff'), url('https : //assets-6.mxplay.com/static/mxoneweb/mobile/fonts/Rubik-Bold.ttf') format('truetype')
+}
+
+body {
+    background-color: #d2e1f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-lg-3,
+.col-md-4,
+.col-sm-6 {
+    margin-bottom: 20px;
+}
+
+.col-lg-3,
+.col-md-4,
+.col-sm-6,
+.TV_Channels {
+    border-radius: 10px;
+}
+
+.TV_Channels {
+    width: 100%;
+    border: 1.5px solid black;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.TV_Channels:hover {
+    transform: scale(1.05);
+    border: 1.5px solid red;
+}
+
+.--ChannelName {
+    text-align: center;
+    border: 1.5px solid black;
+    margin-top: 0px;
+    font-size: 16px;
+    font-family: 'Gloock', serif;
+    color: #000;
+    background-color: PaleTurquoise;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.anchor {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.anchor:hover .TV_Channels {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 576px) {
+    #searchInput {
+        width: 40%;
+    }
+
+    #tvCatalogue .col-sm-4 {
+        flex: 0 0 31%;
+    }
+}
+
+@media (min-width: 768px) {
+    #tvCatalogue .col-md-3 {
+        flex: 0 0 23%;
+    }
+}
+
+@media (min-width: 992px) {
+    #tvCatalogue .col-lg-2 {
+        flex: 0 0 18%;
+    }
+}
